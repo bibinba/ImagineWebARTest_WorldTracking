@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | My project</title>
+    <title> ImagineWebARTest</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
         html{
@@ -45,8 +45,8 @@
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
         <select id="chooseCamSel" style="display: none;" onchange="SelectCam()"></select>
-        <p style="text-align: center; width:60vw;">This augmented reality experience requires access to your device's camera</p>
-        <button id="startARButton" onclick="StartAR()" style="display:none">ALLOW ACCESS</button>
+        <p style="text-align: center; width:60vw;">ImagineWebARアセットを使ったデモページです</p>
+        <button id="startARButton" onclick="スタート()" style="display:none">ALLOW ACCESS</button>
     </div>
     <div id="screenshotDiv" style="display: none;" class="ctaDiv">
         <div style="position:relative; background-color:white; padding:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);">
@@ -92,7 +92,7 @@
             })
             .catch(error => {
                 console.error("Failed to initialize ImageTracker. Are you missing opencv.js? " + error);
-                ShowError("Failed to initialize the experience.");
+                ShowError("Failed to initialize the experience.Failed to initialize ImageTracker. Are you missing opencv.js");
             });
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
